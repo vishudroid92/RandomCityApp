@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Random City App</string>
+    <string name="splash_title">Random City App</string>
+    <string name="splash_subtitle">Explore emissions in vibrant cities</string>
+    <string name="database_name">random_city_db</string>
+    <string name="city">city</string>
+    <string name="id">id</string>
+    <string name="welcome_message">Welcome to %1$s</string>
+    <string name="content_desc_back">Back</string>
+</resources>

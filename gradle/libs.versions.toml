@@ -1,0 +1,64 @@
+[versions]
+kotlin = "1.9.22"
+compose = "1.6.4"
+room = "2.6.1"
+nav = "2.7.7"
+work = "2.9.0"
+maps-compose = "2.11.4"
+maps = "18.2.0"
+lifecycle = "2.6.2"
+compose-runtime = "1.6.1"
+coroutines-test = "1.7.3"
+
+# Test versions
+junit = "4.13.2"
+mockk = "1.13.5"
+core-testing = "2.2.0"
+test-core = "1.5.0"
+turbine = "1.0.0"
+robolectric = "4.11.1"
+
+[plugins]
+android-application = { id = "com.android.application", version = "8.4.0" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version = "1.9.22" }
+
+[libraries]
+# Core
+androidx-core = "androidx.core:core-ktx:1.13.1"
+activity-compose = "androidx.activity:activity-compose:1.9.0"
+lifecycle-runtime = "androidx.lifecycle:lifecycle-runtime-ktx:2.7.0"
+lifecycle-process = { module = "androidx.lifecycle:lifecycle-process", version.ref = "lifecycle" }
+coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines-test" }
+
+# Compose
+compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
+compose-material3 = "androidx.compose.material3:material3:1.2.1"
+compose-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+compose-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
+compose-runtime-livedata = { module = "androidx.compose.runtime:runtime-livedata", version.ref = "compose-runtime" }
+
+# Navigation
+navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "nav" }
+
+# Room
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+
+# WorkManager
+work-runtime = { module = "androidx.work:work-runtime-ktx", version.ref = "work" }
+
+# Coroutines
+coroutines-android = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3"
+
+# Google Maps
+maps-compose = { module = "com.google.maps.android:maps-compose", version.ref = "maps-compose" }
+maps-sdk = { module = "com.google.android.gms:play-services-maps", version.ref = "maps" }
+
+# Test dependencies
+junit = { module = "junit:junit", version.ref = "junit" }
+mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
+core-testing = { module = "androidx.arch.core:core-testing", version.ref = "core-testing" }
+test-core = { module = "androidx.test:core", version.ref = "test-core" }
+turbine = { module = "app.cash.turbine:turbine", version.ref = "turbine" }
+robolectric = { module = "org.robolectric:robolectric", version.ref = "robolectric" }
